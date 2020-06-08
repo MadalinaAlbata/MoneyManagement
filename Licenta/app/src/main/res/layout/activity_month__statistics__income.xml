@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+
+    android:paddingBottom="16dp"
+    tools:context=".Month_Statistics_Income">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_piechart_expense1"
+        android:layout_marginLeft="50dp"
+        android:background="#C810C206"
+        android:text="Expense"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        app:fontFamily="@font/condiment"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_piechart_income1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="#C70707"
+        android:text="INCOME"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        app:fontFamily="@font/condiment"
+        />
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/expense_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Income Percentages"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/verde_inchis"
+        android:layout_below="@+id/btn_piechart_income1"
+        android:textSize="25sp"
+        app:fontFamily="@font/condiment" />
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_below="@id/expense_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        android:id="@+id/pieChart_income"
+        ></com.github.mikephil.charting.charts.PieChart>
+
+</RelativeLayout>

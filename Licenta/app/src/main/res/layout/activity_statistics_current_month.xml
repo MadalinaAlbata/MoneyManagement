@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Month_Statistics_Expense">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout2"
+    android:orientation="vertical"
+    android:background="#DDDDDD"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/linear_layout1"
+        android:weightSum="3"
+         android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/vezi_luna"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Monthly"
+            android:textAlignment="center"
+            android:background="@drawable/border_red"
+            android:textSize="16dp"
+            app:fontFamily="@font/condiment"
+            />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:fontFamily="@font/condiment"
+            android:text="Yearly"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:id="@+id/vezi_luni"
+            android:background="@drawable/background_butoane"
+            />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:fontFamily="@font/condiment"
+            android:text="Compare 2 Years"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:id="@+id/compare_years"
+            android:background="@drawable/background_butoane"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <Spinner
+        android:id="@+id/spinner_luna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        app:fontFamily="@font/condiment"
+
+        ></Spinner>
+   <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectLuna"
+        android:text="Select Luna"/>-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout1"
+        android:layout_below="@id/vezi_luni"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/button_valoare_income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0DA727"
+            android:text="INCOME"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+
+            android:textSize="16dp"
+            app:fontFamily="@font/condiment" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:fontFamily="@font/condiment"
+            android:textColor="#ffff"
+            android:text="EXPENSE"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:background="@color/rosu"
+
+            android:id="@+id/button_valoare_expense"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/linear_layout1"
+        android:id="@+id/linear_layout2"
+        android:paddingBottom="10dp"
+
+        android:gravity="center_horizontal">
+        <TextView
+        android:id="@+id/valoare_income"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+            android:background="#5400E676"
+
+            android:textColor="#fff"
+            android:paddingBottom="10dp"
+        android:text="jfbhbr"
+        />
+         <TextView
+           android:id="@+id/valoare_expense"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:textAlignment="center"
+           android:textSize="20dp"
+           android:textColor="#fff"
+             android:background="#80D32F2F"
+             android:paddingBottom="10dp"
+
+             android:layout_weight="1"
+           android:text="jfbhbr"
+           />
+    </LinearLayout>-->
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_below="@+id/spinner_luna"
+android:background="@drawable/background_linechart"
+    android:id="@+id/relativ2">
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:id="@+id/lineChart"
+
+        ></com.github.mikephil.charting.charts.LineChart>
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/relativ2"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+
+        >
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/background_blue">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id1"
+                android:text="Balance"
+                android:textSize="16dp"
+
+                android:textColor="#094EF5"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                app:fontFamily="@font/condiment"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id1"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/valoare_balanta"
+                android:textSize="20dp"
+                android:text="dhsufyh "
+                android:textAlignment="center"
+                app:fontFamily="@font/condiment"
+
+                android:textColor="#094EF5"/>
+        </RelativeLayout
+>
+        <RelativeLayout
+            android:id="@+id/relative_layout_expense"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/background_red"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/expense"
+                android:layout_toLeftOf="@+id/expense"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text=" Expenses "
+                android:textAlignment="center"
+                android:textSize="16dp"
+                app:fontFamily="@font/condiment"
+                android:textColor="#E61212"
+                />
+
+            <TextView
+                android:id="@+id/valoare_expense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/expense"
+                android:textSize="20dp"
+                app:fontFamily="@font/condiment"
+                android:textColor="#E61212"
+                android:paddingBottom="10dp"
+                android:text="jfbhbr"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/background_green"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/income"
+                android:layout_toLeftOf="@+id/income"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/income"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:text=" Incomes "
+                android:textAlignment="center"
+                android:textSize="16dp"
+                app:fontFamily="@font/condiment"
+                android:textColor="#16AA0F"
+                />
+
+            <TextView
+                android:id="@+id/valoare_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/income"
+                android:textSize="20dp"
+                app:fontFamily="@font/condiment"
+                android:textColor="#16AA0F"
+                android:paddingBottom="10dp"
+                android:text="jfbhbr"
+                />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+</ScrollView>

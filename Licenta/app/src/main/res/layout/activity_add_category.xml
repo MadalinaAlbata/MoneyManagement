@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/col_transparent"
+    tools:context=".AddCategoryExpense">
+
+    <TextView
+        android:id="@+id/add_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:id="@+id/add_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_category"
+android:layout_marginTop="25dp"
+        android:hint="Amount"
+        android:inputType="number|numberDecimal"
+         />
+
+    <EditText
+        android:id="@+id/add_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notes"
+       android:layout_below="@+id/add_price"
+        />
+
+    <TextView
+        android:id="@+id/add_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_description"
+        android:layout_marginTop="4dp"
+        android:hint="Select the date"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_add_data"
+        android:layout_width="35dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/add_description"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/add_data"
+        android:background="@drawable/calendar_alb" />
+
+        />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_below="@+id/button_add_data"/>
+
+
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add_data"
+        android:layout_toRightOf="@+id/button_add"
+        android:text="CANCEL" />
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Licenta</string>
+    <string name="money_manager">Money Manager</string>
+    <string name="time_manager">Time Manager</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="animal">Animal</string>
+    <string name="food">Food</string>
+    <string name="bank">Bank</string>
+    <string name="clothes">Clothes</string>
+    <string name="gym">Gym</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="phone">Phone</string>
+    <string name="rent">Rent</string>
+    <string name="travel">Travel</string>
+    <string name="other">Other</string>
+    <string name="salary">Salary</string>
+    <string name="gift">Gift</string>
+    <string name="add_income">Add Income</string>
+    <string name="transaction">Transaction</string>
+    <string name="monthly"><u>mo</u></string>
+    <string-array name="transaction">
+        <item>All Categories</item>
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    >
+    <TextView
+        android:id="@+id/edit_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type"
+
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notes"
+        android:layout_below="@+id/edit_type"
+        />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="number|numberDecimal"
+        android:layout_below="@+id/edit_description"
+         />
+
+    <TextView
+        android:id="@+id/edit_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_price"
+        android:layout_marginTop="4dp"
+        android:hint="Select the date"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_data"
+        android:layout_width="35dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/edit_price"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/edit_data"
+        android:background="@drawable/calendar_alb" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_update2"
+        android:hint="id"
+
+        android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/button_update2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_data"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_data"
+        android:layout_toRightOf="@+id/button_update2"
+        android:text="Delete" />
+
+</RelativeLayout>

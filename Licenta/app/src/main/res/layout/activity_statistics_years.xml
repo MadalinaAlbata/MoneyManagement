@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".StatisticsYears">
+
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/linear_layout1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/vezi_luna"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Monthly"
+            android:textAlignment="center"
+            android:background="@drawable/background_butoane"
+            android:textSize="16dp"
+            app:fontFamily="@font/condiment"
+            />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:fontFamily="@font/condiment"
+            android:text="Yearly"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:id="@+id/vezi_luni"
+
+            android:background="@drawable/border_red"
+
+            />
+
+    </LinearLayout>-->
+    <Spinner
+        android:id="@+id/spinner_ani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        app:fontFamily="@font/condiment"
+
+        ></Spinner>
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/spinner_ani"
+        android:id="@+id/barchart"
+        >
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+</RelativeLayout>

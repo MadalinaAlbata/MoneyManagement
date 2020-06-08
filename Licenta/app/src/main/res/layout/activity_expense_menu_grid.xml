@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpenseMenuGrid"
+    >
+
+<TextView
+    android:layout_marginTop="2dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Expenses"
+    android:id="@+id/tv_expenense_menu_grid"
+    android:textSize="20dp"
+    android:textColor="#000"
+    android:layout_centerHorizontal="true"
+    />
+    <SearchView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view"
+        android:layout_below="@id/tv_expenense_menu_grid"
+        android:queryHint="Search..">
+
+    </SearchView>
+
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_view"
+        android:numColumns="4">
+
+    </GridView>
+
+</RelativeLayout>

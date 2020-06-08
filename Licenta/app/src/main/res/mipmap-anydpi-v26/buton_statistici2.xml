@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/statistici_culare"/>
+    <foreground android:drawable="@mipmap/statistici2"/>
+</adaptive-icon>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00897B</color>
+    <color name="colorAccent">#C70BA8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="verde">#78EE80</color>
+    <color name="verde_inchis">#20C931</color>
+    <color name="albastru_inchis">#061157</color>
+    <color name="start">#6BFF26E3</color>
+    <color name="start1">#C70BA8</color>
+    <color name="end">#F53587</color>FF43A04766
+    <color name="end1">#A8EA00F2</color>
+    <color name="albastru2">#F500BCD4</color>
+    <color name="albastru_inchis1">#D70A2568</color>
+    <color name="albastru1">#2487FF</color>
+    <color name="rosu">#F02020</color>
+</resources>

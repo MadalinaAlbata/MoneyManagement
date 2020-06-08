@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_category_income">
+
+    <TextView
+        android:id="@+id/add_category_income1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:id="@+id/add_price_income1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_category_income1"
+        android:layout_marginTop="25dp"
+        android:hint="Amount"
+        android:inputType="number|numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/add_description_income1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notes"
+        android:layout_below="@+id/add_price_income1"
+        />
+
+    <TextView
+        android:id="@+id/add_data_income1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_description_income1"
+        android:layout_marginTop="4dp"
+        android:hint="Select the date"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_add_data_income1"
+        android:layout_width="35dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/add_description_income1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/add_data_income1"
+        android:background="@drawable/calendar_alb" />
+
+    />
+
+    <Button
+        android:id="@+id/button_add_income1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_below="@+id/button_add_data_income1"/>
+
+
+    <Button
+        android:id="@+id/button_close_income1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add_data_income1"
+        android:layout_toRightOf="@+id/button_add_income1"
+        android:text="CANCEL" />
+
+
+</RelativeLayout>
